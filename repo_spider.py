@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
 """
+Walk through the GitHub repositories in repos.txt and pull metadata out of them for
+later reuse.
 """
 
 import collections
