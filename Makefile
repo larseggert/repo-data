@@ -1,5 +1,6 @@
 
 PYTHON=python3
+MAKE=make
 
 .PHONY: repo_data.json
 repo_data.json: fresh repo_spider.py repos.txt
@@ -9,12 +10,16 @@ repo_data.json: fresh repo_spider.py repos.txt
 fresh:
 	git pull origin master
 
-.PHONY: changed_data
-changed_data: repo_data.json
-	git status --short repo_data.json | grep -s "M" || exit 0
-
 .PHONY: update
-update: changed_data
+update: repo_data.json
+	$(MAKE) changed_data && $(MAKE) push
+
+.PHONY: changed_data
+changed_data:
+	git status --short repo_data.json | grep -s "M" || exit 1
+
+.PHONY: push
+push:
 	git add repo_data.json
 	git commit -m "update repo_data.json"
 	git push origin master
