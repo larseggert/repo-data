@@ -10,7 +10,7 @@ fresh:
 	git pull origin master
 
 .PHONY: update
-update:
+update: repo_data.json
 	git add repo_data.json
 	git commit -m "update repo_data.json"
 	git push origin master
