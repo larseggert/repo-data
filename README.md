@@ -50,3 +50,8 @@ Additional metadata is gathered from specification documents. The following fiel
 This file is a simple, line-delimited list of repositories to monitor. Each line is the name of the owner and repository separated by a `/`. Optionally, this can be followed by a branch identifier after a space; the default is `master`.
 
 
+
+## Using `repo_data.json`
+
+If your application uses this data, please consider adding it to the [consumers list](https://github.com/mnot/ietf-repo-data/wiki/Consumers), so we can stay in touch.
+
