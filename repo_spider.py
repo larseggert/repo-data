@@ -141,7 +141,8 @@ class RepoSpider(object):
             return {"error": True}
         front = root.find("front")
         title = front.find("title").text
-        return {"title": title}
+        issue_label = root.attrib.get("issue_label", None)
+        return {"title": title, "issue_label": issue_label}
 
     @staticmethod
     def get_repo_tags(repo_id):
