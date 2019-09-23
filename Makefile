@@ -11,8 +11,8 @@ fresh:
 
 .PHONY: update
 update: repo_data.json
-	git ls-files -m || exit
+	git status --short repo_data.json || exit
 	git add repo_data.json
 	git commit -m "update repo_data.json"
 	git push origin master
-	
+
