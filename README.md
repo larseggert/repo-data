@@ -1,14 +1,14 @@
 # IETF Repository Data Service
 
-This repository gathers metadata from Github repositories that have opted in. It is used to help provide a growing number of services to them.
+This repository gathers metadata from Github repositories for IETF-related work in the `repo_data.json` file.
 
 
 ## Adding Your Repository to the Index
 
 To add your repository:
 
-1. Create an `ietf.json` file in the root of your repository
-2. Submit a pull request to update `repos.txt` in this repository
+1. Create an `ietf.json` file in the root of your repository. If it's the first one for your group, make sure you include the `primary` fields (see below).
+2. Submit a pull request to update `repos.txt` in this repository.
 
 Your repository's data (and any subsequent updates) should be reflected when the PR is merged. Subsequent updates to `ietf.json` should be reflected within six hours.
 
@@ -40,7 +40,9 @@ Note that each group (identified by the `group` field) can have only one `primar
 
 ### Specification Markup
 
-- `issue_label`: 
+Additional metadata is gathered from specification documents. The following fields can be added in the YAML frontmatter of Markdown documents, or as attributes on the `<rfc>` element of XML documents:
+
+- `issue_label`: A GitHub issues label that is used to classify issues for this specification.
 
 
 ### The `repos.txt` File
