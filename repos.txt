@@ -1,0 +1,3 @@
+quicwg/base-drafts
+httpwg/http-extensions
+httpwg/http-core
