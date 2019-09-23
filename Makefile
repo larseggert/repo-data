@@ -9,10 +9,13 @@ repo_data.json: fresh repo_spider.py repos.txt
 fresh:
 	git pull origin master
 
+.PHONY: changed_data
+changed_data: repo_data.json
+	git status --short repo_data.json | grep -s "M" || exit
+
 .PHONY: update
-update: repo_data.json
+update: changed_data
 	git status --short repo_data.json || exit
 	git add repo_data.json
 	git commit -m "update repo_data.json"
 	git push origin master
-
