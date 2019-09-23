@@ -15,7 +15,7 @@ changed_data: repo_data.json
 
 .PHONY: update
 update: changed_data
-	git status --short repo_data.json || exit
+	git status --short repo_data.json || exit 0
 	git add repo_data.json
 	git commit -m "update repo_data.json"
 	git push origin master
