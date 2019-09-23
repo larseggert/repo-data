@@ -9,4 +9,9 @@ repo_data.json: fresh repo_spider.py repos.txt
 fresh:
 	git pull origin master
 
+.PHONY: update
+update:
+	git add repo_data.json
+	git commit -m "update repo_data.json"
+	git push origin master
 	
