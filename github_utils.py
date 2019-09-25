@@ -1,22 +1,34 @@
 import os
 import sys
 
+from urllib.parse import urlsplit
+
 import requests
 
 from parse_link import parse_link_value
 
 
+GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", None)
 GITHUB_CLIENT_ID = os.environ.get("GITHUB_CLIENT_ID", None)
 GITHUB_CLIENT_SECRET = os.environ.get("GITHUB_CLIENT_SECRET", None)
 
 
 def get(url):
-    if GITHUB_CLIENT_ID and GITHUB_CLIENT_SECRET:
+    auth = None
+    if GITHUB_TOKEN:
+
+        class TokenAuth(requests.auth.AuthBase):
+            def __call__(self, r):
+                r.headers["Authorization"] = f"token {GITHUB_TOKEN}"
+                return r
+
+        auth = TokenAuth()
+    elif GITHUB_CLIENT_ID and GITHUB_CLIENT_SECRET:
         if (
             "client_id" not in url
         ):  # some of the URLs that github gives us already have it.
             url = f"{url}?client_id={GITHUB_CLIENT_ID}&client_secret={GITHUB_CLIENT_SECRET}"
-    res = requests.get(url)
+    res = requests.get(url, auth=auth)
     if res.status_code >= 400:
         sys.stderr.write(f"Fetch error: {res.status_code} for {url}\n")
         raise IOError
