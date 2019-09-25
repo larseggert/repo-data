@@ -139,9 +139,15 @@ class RepoSpider(object):
             dom = minidom.parseString(file_content)
         except:
             return {"error": True}
-        pis = [node for node in dom.documentElement.childNodes if node.nodeType == node.PROCESSING_INSTRUCTION_NODE]
+        pis = [
+            node
+            for node in dom.documentElement.childNodes
+            if node.nodeType == node.PROCESSING_INSTRUCTION_NODE
+        ]
         try:
-            issue_label = [node.data.strip() for node in pis if node.target == "issue_label"][0]
+            issue_label = [
+                node.data.strip() for node in pis if node.target == "issue_label"
+            ][0]
         except IndexError:
             issue_label = None
         frontElement = dom.getElementsByTagName("front")[0]
