@@ -2,6 +2,18 @@
 
 This repository gathers metadata from Github repositories for IETF-related work in the `repo_data.json` file.
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [IETF Repository Data Service](#ietf-repository-data-service)
+  - [Adding Your Repository to the Index](#adding-your-repository-to-the-index)
+    - [The `ietf.json` File](#the-ietfjson-file)
+    - [Specification Markup](#specification-markup)
+    - [The `repos.txt` File](#the-repostxt-file)
+  - [Using `repo_data.json`](#using-repo_datajson)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 ## Adding Your Repository to the Index
 
