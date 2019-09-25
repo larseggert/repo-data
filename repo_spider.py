@@ -141,7 +141,7 @@ class RepoSpider(object):
             return {"error": True}
         pis = [
             node
-            for node in dom.documentElement.childNodes
+            for node in dom.childNodes
             if node.nodeType == node.PROCESSING_INSTRUCTION_NODE
         ]
         try:
