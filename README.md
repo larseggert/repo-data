@@ -17,12 +17,12 @@ This repository gathers metadata from Github repositories for IETF-related work 
 
 ## Adding Your Repository to the Index
 
-To add your repository:
+To have your repository included in the `repo_data.json` file:
 
-1. Create an `ietf.json` file in the root of your repository. If it's the first one for your group, make sure you include the `primary` fields (see below).
+1. Create an `ietf.json` file in the repo root. If it's the first one for your group, make sure you include the `primary` fields (see below).
 2. Submit a pull request to update `repos.txt` in this repository.
 
-Your repository's data (and any subsequent updates) should be reflected when the PR is merged. Subsequent updates to `ietf.json` should be reflected within six hours.
+Your repository's data (and any subsequent updates) should be reflected when the PR is merged. Subsequent updates to `ietf.json` and repo metadata should be reflected within six hours.
 
 
 ### The `ietf.json` File
@@ -38,7 +38,7 @@ The `ietf.json` file is a [JSON](https://tools.ietf.org/html/rfc8259) format wit
 Repos of type `specs` can have these additional fields:
 
 - `spec_regex`: a regular expression that matches specification files in the root directory; only valid on a `repo_type` of `specs`.
-- `revisions_tagged`: boolean indicating whether the repo followed the `filename-revision` tagging convention. Defaults to False.
+- `revisions_tagged`: boolean indicating whether the repo followed the `filename-revision` tagging convention (as the [I-D-template](https://github.com/martinthomson/i-d-template) does). Defaults to False.
 
 If `primary` is `true`, these additional fields can be present:
 
