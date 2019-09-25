@@ -33,7 +33,7 @@ The `ietf.json` file is a [JSON](https://tools.ietf.org/html/rfc8259) format wit
 - `primary`: boolean indicating whether additional information is present; see below.
 - `repo_type`: one of `specs`, `tests`, `docs`, `website`, `other`.
 - `report_to`: list; currently can contain `group_email`. Where weekly reports of issue and PR activity are sent to. Optional.
-- `report_exclude_labels`: list of strings that indicate Github issue labels that are filtered out of reports. Optional.
+- `report_exclude_labels`: list of strings that indicate Github issue labels that are filtered out of reports (e.g., "editorial"). Optional.
 
 Repos of type `specs` can have these additional fields:
 
@@ -52,7 +52,9 @@ Note that each group (identified by the `group` field) can have only one `primar
 
 ### Specification Markup
 
-Additional metadata is gathered from specification documents. The following fields can be added in the YAML frontmatter of Markdown documents, or as attributes on the `<rfc>` element of XML documents:
+Additional metadata is gathered from specification documents in your repo. 
+
+The following fields can be added in the YAML frontmatter of Markdown documents, or as attributes on the `<rfc>` element of XML documents:
 
 - `issue_label`: A GitHub issues label that is used to classify issues for this specification.
 
