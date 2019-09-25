@@ -46,7 +46,7 @@
         ],
         "report_to": "group_email",
         "revisions_tagged": true,
-        "spec_regex": "draft-ietf-httpbis-.+\\.md",
+        "spec_regex": "draft-ietf-httpbis-.+\\.(md|xml)",
         "specs": {
           "draft-ietf-httpbis-bcp56bis": {
             "issue_label": null,
@@ -92,6 +92,10 @@
             "issue_label": "proxy-status",
             "revision": 0,
             "title": "The Proxy-Status HTTP Header Field"
+          },
+          "draft-ietf-httpbis-rand-access-live": {
+            "error": true,
+            "revision": 4
           },
           "draft-ietf-httpbis-rfc6265bis": {
             "issue_label": null,
