@@ -19,7 +19,7 @@
         "spec_regex": "draft-ietf-httpbis-.+\\.xml",
         "specs": {
           "draft-ietf-httpbis-cache-latest": {
-            "issue_label": null,
+            "issue_label": "cache",
             "title": "HTTP Caching"
           },
           "draft-ietf-httpbis-messaging-latest": {
