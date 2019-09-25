@@ -54,9 +54,9 @@ Note that each group (identified by the `group` field) can have only one `primar
 
 Additional metadata is gathered from specification documents in your repo. 
 
-The following fields can be added in the YAML frontmatter of Markdown documents, or as a Processing Instruction (e.g., `<?issue_label foo?>`) in XML documents:
+The following fields can be added in the YAML frontmatter of Markdown documents, or as a Processing Instruction (e.g., `<?github-issue-label foo?>`) in XML documents:
 
-- `issue_label`: A GitHub issues label that is used to classify issues for this specification.
+- `github-issue-label`: A GitHub issues label that is used to classify issues for this specification.
 
 
 ### The `repos.txt` File

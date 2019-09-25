@@ -130,7 +130,7 @@ class RepoSpider(object):
         except:
             return {"error": True}
         doc_data = {}
-        copy_data(content, doc_data, [("title", None), ("issue_label", None)])
+        copy_data(content, doc_data, [("title", None), ("github-issue-label", None)])
         return doc_data
 
     @staticmethod
@@ -146,14 +146,14 @@ class RepoSpider(object):
         ]
         try:
             issue_label = [
-                node.data.strip() for node in pis if node.target == "issue_label"
+                node.data.strip() for node in pis if node.target == "github-issue-label"
             ][0]
         except IndexError:
             issue_label = None
         frontElement = dom.getElementsByTagName("front")[0]
         titleElement = frontElement.getElementsByTagName("title")[0]
         title = titleElement.firstChild.nodeValue
-        return {"title": title, "issue_label": issue_label}
+        return {"title": title, "github-issue-label": issue_label}
 
     @staticmethod
     def get_repo_tags(repo_id):
