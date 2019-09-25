@@ -10,7 +10,7 @@ import io
 import json
 import re
 import sys
-import xml.etree.ElementTree as ET
+import xml.dom.minidom as minidom
 
 import yaml
 
@@ -136,12 +136,17 @@ class RepoSpider(object):
     @staticmethod
     def parse_xml_rfc(file_content):
         try:
-            root = ET.fromstring(file_content)
+            dom = minidom.parseString(file_content)
         except:
             return {"error": True}
-        front = root.find("front")
-        title = front.find("title").text
-        issue_label = root.attrib.get("issue_label", None)
+        pis = [node for node in dom.documentElement.childNodes if node.nodeType == node.PROCESSING_INSTRUCTION_NODE]
+        try:
+            issue_label = [node.data.strip() for node in pis if node.target == "issue_label"][0]
+        except IndexError:
+            issue_label = None
+        frontElement = dom.getElementsByTagName("front")[0]
+        titleElement = frontElement.getElementsByTagName("title")[0]
+        title = titleElement.firstChild.nodeValue
         return {"title": title, "issue_label": issue_label}
 
     @staticmethod
