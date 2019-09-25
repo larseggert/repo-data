@@ -4,9 +4,6 @@ on:
   push:
   schedule:
     - cron:  '0 */6 * * *'
-
-env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   
 jobs:
   build:
@@ -24,5 +21,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Test with pytest
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         ./update.sh
