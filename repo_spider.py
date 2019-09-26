@@ -78,8 +78,13 @@ class RepoSpider(object):
         self.group_data[group]["repos"].append(repo_id)
 
     def fetch_repo_specs(self, repo_id):
-        if "spec_regex" in self.repo_data[repo_id]:
-            matcher = re.compile(f"^{self.repo_data[repo_id]['spec_regex']}$")
+        if self.repo_data[repo_id].get("repo_type", None) == "specs":
+            if "spec_regex" in self.repo_data[repo_id]:
+                matcher = re.compile(f"^{self.repo_data[repo_id]['spec_regex']}$")
+            else:
+                matcher = re.compile(
+                    f"^draft-[^-]+-{self.repo_data[repo_id]['group']}-[^.]+\.(md|xml)$"
+                )
             try:
                 res = get(f"https://api.github.com/repos/{repo_id}/contents/")
                 contents = res.json()

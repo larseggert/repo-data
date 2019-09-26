@@ -37,8 +37,8 @@ The `ietf.json` file is a [JSON](https://tools.ietf.org/html/rfc8259) format wit
 
 Repos of type `specs` can have these additional fields:
 
-- `spec_regex`: a regular expression that matches specification files in the root directory; only valid on a `repo_type` of `specs`.
 - `revisions_tagged`: boolean indicating whether the repo followed the `filename-revision` tagging convention (as the [I-D-template](https://github.com/martinthomson/i-d-template) does). Defaults to False.
+- `spec_regex`: a regular expression that matches specification files in the root directory. Optional; if omitted, files that match `draft-[^-]+-{group}-[^.]+\.(md|xml)` will be considered specifications.
 
 If `primary` is `true`, these additional fields can be present:
 
