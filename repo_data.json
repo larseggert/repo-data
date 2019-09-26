@@ -33,11 +33,6 @@
       },
       "httpwg/http-extensions": {
         "group": "httpbis",
-        "group_chairs": [
-          "mnot",
-          "tfpauly"
-        ],
-        "group_email": "ietf-http-wg@w3.org",
         "primary": true,
         "repo_type": "specs",
         "report_exclude_labels": [
@@ -111,16 +106,20 @@
     }
   },
   "quic": {
+    "group_chairs": [],
+    "group_email": "quic@ietf.org",
+    "group_name": "QUIC",
+    "group_type": "wg",
     "repos": {
       "quicwg/base-drafts": {
         "group": "quic",
+        "primary": true,
         "repo_type": "specs",
         "report_exclude_labels": [
           "editorial"
         ],
         "report_to": "group_email",
         "revisions_tagged": true,
-        "spec_regex": "draft-ietf-quic-.+\\.md",
         "specs": {
           "draft-ietf-quic-http": {
             "github-issue-label": null,
