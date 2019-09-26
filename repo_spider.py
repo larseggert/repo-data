@@ -74,6 +74,7 @@ class RepoSpider(object):
                     ("group_email", None),
                     ("group_chairs", []),
                 ],
+                rm=True,
             )
         self.group_data[group]["repos"].append(repo_id)
 
@@ -174,13 +175,15 @@ class RepoSpider(object):
         return json.dumps(self.group_data, indent=2, sort_keys=True)
 
 
-def copy_data(source, dest, targets):
+def copy_data(source, dest, targets, rm=False):
     for target in targets:
         assert isinstance(target, tuple)
         name = target[0]
         default = None
         if name in source:
             dest[name] = source[name]
+            if rm:
+                del source[name]
         else:
             dest[name] = target[1]
 
