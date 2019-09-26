@@ -6,7 +6,7 @@
     ],
     "group_email": "ietf-http-wg@w3.org",
     "group_name": "httpbis",
-    "group_type": null,
+    "group_type": "wg",
     "repos": {
       "httpwg/http-core": {
         "group": "httpbis",
