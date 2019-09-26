@@ -16,7 +16,6 @@
         ],
         "report_to": "group_email",
         "revisions_tagged": false,
-        "spec_regex": "draft-ietf-httpbis-.+\\.xml",
         "specs": {
           "draft-ietf-httpbis-cache-latest": {
             "github-issue-label": "cache",
@@ -46,7 +45,6 @@
         ],
         "report_to": "group_email",
         "revisions_tagged": true,
-        "spec_regex": "draft-ietf-httpbis-.+\\.(md|xml)",
         "specs": {
           "draft-ietf-httpbis-bcp56bis": {
             "github-issue-label": null,
