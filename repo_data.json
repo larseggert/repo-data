@@ -26,7 +26,8 @@
             "title": "HTTP/1.1 Messaging"
           },
           "draft-ietf-httpbis-semantics-latest": {
-            "error": true
+            "github-issue-label": null,
+            "title": "HTTP Semantics"
           }
         }
       },
