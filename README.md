@@ -31,9 +31,12 @@ The `ietf.json` file is a [JSON](https://tools.ietf.org/html/rfc8259) format wit
 
 - `group`: the short name of the [WG](https://datatracker.ietf.org/wg/) or [RG](https://datatracker.ietf.org/rg/) that owns this repo; e.g., `httpbis`, `intarea`.
 - `primary`: boolean indicating whether additional information is present; see below.
-- `repo_type`: one of `specs`, `tests`, `docs`, `website`, `other`.
-- `report_to`: list; currently can contain `group_email`. Where weekly reports of issue and PR activity are sent to. Optional.
+- `repo_type`: one of `specs`, `tests`, `docs`, `website`, `registry`, `other`.
+- `report_to`: list of addresses (see below);  Where weekly reports of issue and PR activity are sent. Optional.
+- `issue_summary_to`: list of addresses (see below); Where weekly reports of open issues are sent. Optional.
 - `report_exclude_labels`: list of strings that indicate Github issue labels that are filtered out of reports (e.g., "editorial"). Optional.
+
+Fields ending in `_to` are lists of e-mail addresses; special case `group_email` sends to the group e-mail address.
 
 Repos of type `specs` can have these additional fields:
 
