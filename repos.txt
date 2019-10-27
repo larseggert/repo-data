@@ -1,3 +1,4 @@
 quicwg/base-drafts
 httpwg/http-extensions
 httpwg/http-core
+link-relations/registry
