@@ -1,4 +1,20 @@
 {
+  "Link Relations Registry": {
+    "group_chairs": [],
+    "group_email": null,
+    "group_name": "Link Relations Registry",
+    "group_type": null,
+    "repos": {
+      "link-relations/registry": {
+        "group": "Link Relations Registry",
+        "issue_summary_to": [
+          "mnot@mnot.net"
+        ],
+        "primary": true,
+        "repo_type": "registry"
+      }
+    }
+  },
   "httpbis": {
     "group_chairs": [
       "mnot",
