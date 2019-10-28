@@ -21,7 +21,7 @@ To have your repository included in the `repo_data.json` file:
 1. Create an `ietf.json` file in the repo root. If it's the first one for your group, make sure you include the `primary` fields (see below).
 2. Submit a pull request to update `repos.txt` in this repository.
 
-Your repository's data (and any subsequent updates) should be reflected when the PR is merged. Subsequent updates to `ietf.json` and repo metadata should be reflected within six hours.
+Your repository's data should be reflected when the PR is merged. Subsequent updates to `ietf.json` and repo metadata should be reflected within six hours.
 
 
 ### The `ietf.json` File
