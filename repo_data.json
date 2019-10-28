@@ -17,7 +17,9 @@
     }
   },
   "httpbis": {
-    "activity_exclude_labels": null,
+    "activity_exclude_labels": [
+      "editorial"
+    ],
     "group_chairs": [
       "mnot",
       "tfpauly"
@@ -52,9 +54,6 @@
         "group": "httpbis",
         "primary": true,
         "repo_type": "specs",
-        "report_exclude_labels": [
-          "editorial"
-        ],
         "report_to": [
           "group_email"
         ],
