@@ -1,3 +1,4 @@
+import datetime
 import os
 import sys
 
@@ -12,8 +13,12 @@ GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", None)
 GITHUB_CLIENT_ID = os.environ.get("GITHUB_CLIENT_ID", None)
 GITHUB_CLIENT_SECRET = os.environ.get("GITHUB_CLIENT_SECRET", None)
 
+github_cache = {}
+
 
 def get(url):
+    if url in github_cache:
+        return github_cache[url]
     auth = None
     if GITHUB_TOKEN:
 
@@ -38,6 +43,7 @@ def get(url):
         remaining = int(remaining)
         if remaining < 100:
             sys.stderr.write(f"WARNING: {remaining} requests left.\n")
+    github_cache[url] = res
     return res
 
 
@@ -62,3 +68,10 @@ def collapse_list(url, output=[]):
         elif rel_last:
             collapse_list(rel_last, output)
     return output
+
+
+now = datetime.datetime.now()
+def delta_days(dateString):
+    then = datetime.datetime.strptime(dateString, "%Y-%m-%dT%H:%M:%SZ")
+    delta = now - then
+    return delta.days
