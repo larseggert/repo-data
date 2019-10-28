@@ -17,16 +17,6 @@
     }
   },
   "httpbis": {
-    "activity_exclude_labels": [
-      "editorial"
-    ],
-    "group_chairs": [
-      "mnot",
-      "tfpauly"
-    ],
-    "group_email": "ietf-http-wg@w3.org",
-    "group_name": "httpbis",
-    "group_type": "wg",
     "repos": {
       "httpwg/http-core": {
         "group": "httpbis",
@@ -52,7 +42,17 @@
       },
       "httpwg/http-extensions": {
         "group": "httpbis",
-        "primary": true,
+        "group_info": {
+          "activity_exclude_labels": [
+            "editorial"
+          ],
+          "chairs": [
+            "mnot",
+            "tfpauly"
+          ],
+          "email": "ietf-http-wg@w3.org",
+          "type": "wg"
+        },
         "repo_type": "specs",
         "report_to": [
           "group_email"
