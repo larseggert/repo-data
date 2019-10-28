@@ -27,10 +27,9 @@
       "httpwg/http-core": {
         "group": "httpbis",
         "repo_type": "specs",
-        "report_exclude_labels": [
-          "editorial"
+        "report_to": [
+          "group_email"
         ],
-        "report_to": "group_email",
         "revisions_tagged": false,
         "specs": {
           "draft-ietf-httpbis-cache-latest": {
@@ -130,13 +129,15 @@
     "group_type": "wg",
     "repos": {
       "quicwg/base-drafts": {
+        "activity_exclude_labels": [
+          "editorial"
+        ],
         "group": "quic",
         "primary": true,
         "repo_type": "specs",
-        "report_exclude_labels": [
-          "editorial"
+        "report_to": [
+          "group_email"
         ],
-        "report_to": "group_email",
         "revisions_tagged": true,
         "specs": {
           "draft-ietf-quic-http": {
