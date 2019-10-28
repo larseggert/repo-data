@@ -54,7 +54,9 @@
         "report_exclude_labels": [
           "editorial"
         ],
-        "report_to": "group_email",
+        "report_to": [
+          "group_email"
+        ],
         "revisions_tagged": true,
         "specs": {
           "draft-ietf-httpbis-bcp56bis": {
