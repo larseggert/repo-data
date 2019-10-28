@@ -73,7 +73,7 @@ class RepoSpider(object):
                     ("group_type", None),
                     ("group_email", None),
                     ("group_chairs", []),
-                    ("activity_exclude_labels": None)
+                    ("activity_exclude_labels", None)
                 ],
                 rm=True,
             )
