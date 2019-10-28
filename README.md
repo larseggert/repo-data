@@ -2,6 +2,8 @@
 
 This repository gathers metadata from Github repositories for IETF-related work in the `repo_data.json` file.
 
+[![Actions Status](https://github.com/ietf-github-services/repo-data/workflows/Update%20repo_data.json/badge.svg)](https://github.com/ietf-github-services/repo-data/actions)
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
