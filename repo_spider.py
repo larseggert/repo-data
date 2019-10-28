@@ -49,6 +49,7 @@ class RepoSpider(object):
             )
             self.repo_data[repo_id] = res.json()
         except (IOError, ValueError):
+            sys.stderr.write(f"WARNING: Problem fetching repo {repo_id}.\n")
             return
 
     def check_repo_data(self, repo_id):
