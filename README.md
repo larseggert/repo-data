@@ -70,5 +70,5 @@ This file is a simple, line-delimited list of repositories to monitor. Each line
 
 ## Using `repo_data.json`
 
-If your application uses this data, please consider adding it to the [consumers list](https://github.com/mnot/ietf-repo-data/wiki/Consumers), so we can stay in touch.
+If your application uses this data, please consider adding it to the [consumers list](https://github.com/ietf-github-services/repo-data/wiki/Consumers), so we can stay in touch.
 

@@ -7,7 +7,7 @@ git status --short repo_data.json | grep -s "M" || exit 0
 # setup
 git config user.email mnot@mnot.net
 git config user.name mnot-bot
-git remote set-url --push origin https://mnot:$GITHUB_TOKEN@github.com/mnot/ietf-repo-data
+git remote set-url --push origin https://mnot:$GITHUB_TOKEN@github.com/ietf-github-services/repo-data
 git checkout -B master origin/master
 
 # Push the changes.
