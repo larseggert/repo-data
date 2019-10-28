@@ -47,37 +47,32 @@ class RepoSpider(object):
             res = get(
                 f"https://raw.githubusercontent.com/{repo_id}/{branch_id}/ietf.json"
             )
-            self.repo_data[repo_id] = res.json()
+            repo_data = res.json()
         except (IOError, ValueError):
             sys.stderr.write(f"WARNING: Problem fetching repo {repo_id}.\n")
             return
+        self.repo_data[repo_id] = repo_data
 
     def check_repo_data(self, repo_id):
-        group = self.repo_data[repo_id].get("group", None)
-        if not group:
+        repo_data = self.repo_data.get(repo_id, {})
+        try:
+            group = repo_data["group"]
+        except KeyError:
             sys.stderr.write(f"WARNING: Repo {repo_id} without group.\n")
             return
+
         if group not in self.group_data:
             self.group_data[group] = {"repos": []}
 
-        repo_data = self.repo_data[repo_id]
-        if repo_data.get("primary", False):
-            if self.group_data[group]["repos"]:
+        if repo_data.get("group_info", False):
+            if set(self.group_data[group].keys()).discard("repos"):
                 sys.stderr.write(
-                    f"WARNING: Duplicate primary group {group} in {repo_id}.\n"
+                    f"WARNING: Duplicate group info for {group} in {repo_id}.\n"
                 )
-            copy_data(
-                repo_data,
-                self.group_data[group],
-                [
-                    ("group_name", group),
-                    ("group_type", None),
-                    ("group_email", None),
-                    ("group_chairs", []),
-                    ("activity_exclude_labels", None)
-                ],
-                rm=True,
-            )
+            else:
+                self.group_data[group].update(repo_data["group_info"])
+            del repo_data["group_info"]
+
         self.group_data[group]["repos"].append(repo_id)
 
     def fetch_repo_specs(self, repo_id):
@@ -137,9 +132,10 @@ class RepoSpider(object):
             content = yaml.safe_load(yaml_frontmatter)
         except:
             return {"error": True}
-        doc_data = {}
-        copy_data(content, doc_data, [("title", None), ("github-issue-label", None)])
-        return doc_data
+        return {
+            "title": content.get("title", None),
+            "github-issue-label": content.get("github-issue-label", None),
+        }
 
     @staticmethod
     def parse_xml_rfc(file_content):
