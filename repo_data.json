@@ -1,5 +1,6 @@
 {
   "Link Relations Registry": {
+    "activity_exclude_labels": null,
     "group_chairs": [],
     "group_email": null,
     "group_name": "Link Relations Registry",
@@ -16,6 +17,7 @@
     }
   },
   "httpbis": {
+    "activity_exclude_labels": null,
     "group_chairs": [
       "mnot",
       "tfpauly"
@@ -123,15 +125,15 @@
     }
   },
   "quic": {
+    "activity_exclude_labels": [
+      "editorial"
+    ],
     "group_chairs": [],
     "group_email": "quic@ietf.org",
     "group_name": "QUIC",
     "group_type": "wg",
     "repos": {
       "quicwg/base-drafts": {
-        "activity_exclude_labels": [
-          "editorial"
-        ],
         "group": "quic",
         "primary": true,
         "repo_type": "specs",
