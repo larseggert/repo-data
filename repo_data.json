@@ -5,7 +5,8 @@
       "link-relations/registry": {
         "group": "Link Relations Registry",
         "issue_summary_to": [
-          "mnot@mnot.net"
+          "mnot@mnot.net",
+          "julian.reschke@greenbytes.de"
         ],
         "repo_type": "registry"
       }
