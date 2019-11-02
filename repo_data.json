@@ -84,7 +84,7 @@
           },
           "draft-ietf-httpbis-http2-secondary-certs": {
             "github-issue-label": null,
-            "revision": 4,
+            "revision": 5,
             "title": "Secondary Certificate Authentication in HTTP/2"
           },
           "draft-ietf-httpbis-http2-tls13": {
