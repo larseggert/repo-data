@@ -59,8 +59,8 @@
           },
           "draft-ietf-httpbis-cache-header": {
             "github-issue-label": null,
-            "revision": 0,
-            "title": "The Cache HTTP Response Header"
+            "revision": 1,
+            "title": "The Cache-Status HTTP Response Header"
           },
           "draft-ietf-httpbis-client-hints": {
             "github-issue-label": null,
@@ -134,7 +134,7 @@
         "specs": {
           "draft-ietf-quic-http": {
             "github-issue-label": null,
-            "revision": 23,
+            "revision": 24,
             "title": "Hypertext Transfer Protocol Version 3 (HTTP/3)"
           },
           "draft-ietf-quic-invariants": {
@@ -144,22 +144,22 @@
           },
           "draft-ietf-quic-qpack": {
             "github-issue-label": null,
-            "revision": 10,
+            "revision": 11,
             "title": "QPACK: Header Compression for HTTP/3"
           },
           "draft-ietf-quic-recovery": {
             "github-issue-label": null,
-            "revision": 23,
+            "revision": 24,
             "title": "QUIC Loss Detection and Congestion Control"
           },
           "draft-ietf-quic-tls": {
             "github-issue-label": null,
-            "revision": 23,
+            "revision": 24,
             "title": "Using TLS to Secure QUIC"
           },
           "draft-ietf-quic-transport": {
             "github-issue-label": null,
-            "revision": 23,
+            "revision": 24,
             "title": "QUIC: A UDP-Based Multiplexed and Secure Transport"
           }
         }
