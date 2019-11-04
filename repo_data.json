@@ -109,7 +109,7 @@
           },
           "draft-ietf-httpbis-variants": {
             "github-issue-label": null,
-            "revision": 5,
+            "revision": 6,
             "title": "HTTP Representation Variants"
           }
         }
