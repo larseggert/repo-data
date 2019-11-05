@@ -59,7 +59,7 @@
           },
           "draft-ietf-httpbis-cache-header": {
             "github-issue-label": null,
-            "revision": 1,
+            "revision": 2,
             "title": "The Cache-Status HTTP Response Header"
           },
           "draft-ietf-httpbis-client-hints": {
