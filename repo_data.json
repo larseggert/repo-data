@@ -97,11 +97,6 @@
             "revision": 0,
             "title": "The Proxy-Status HTTP Header Field"
           },
-          "draft-ietf-httpbis-rand-access-live": {
-            "github-issue-label": null,
-            "revision": 4,
-            "title": "HTTP Random Access and Live Content"
-          },
           "draft-ietf-httpbis-rfc6265bis": {
             "github-issue-label": null,
             "revision": 3,
