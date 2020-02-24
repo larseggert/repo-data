@@ -87,11 +87,6 @@
             "revision": 5,
             "title": "Secondary Certificate Authentication in HTTP/2"
           },
-          "draft-ietf-httpbis-http2-tls13": {
-            "github-issue-label": null,
-            "revision": 3,
-            "title": "Using TLS 1.3 with HTTP/2"
-          },
           "draft-ietf-httpbis-priority": {
             "github-issue-label": null,
             "title": "Extensible Prioritization Scheme for HTTP"
