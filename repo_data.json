@@ -59,8 +59,8 @@
           },
           "draft-ietf-httpbis-cache-header": {
             "github-issue-label": null,
-            "revision": 2,
-            "title": "The Cache-Status HTTP Response Header"
+            "revision": 3,
+            "title": "The Cache-Status HTTP Response Header Field"
           },
           "draft-ietf-httpbis-client-hints": {
             "github-issue-label": null,
@@ -93,8 +93,8 @@
           },
           "draft-ietf-httpbis-proxy-status": {
             "github-issue-label": "proxy-status",
-            "revision": 0,
-            "title": "The Proxy-Status HTTP Header Field"
+            "revision": 1,
+            "title": "The Proxy-Status HTTP Response Header Field"
           },
           "draft-ietf-httpbis-rfc6265bis": {
             "github-issue-label": null,
