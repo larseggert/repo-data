@@ -79,7 +79,7 @@
           },
           "draft-ietf-httpbis-header-structure": {
             "github-issue-label": null,
-            "revision": 17,
+            "revision": 18,
             "title": "Structured Field Values for HTTP"
           },
           "draft-ietf-httpbis-http2-secondary-certs": {
