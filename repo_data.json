@@ -64,7 +64,7 @@
           },
           "draft-ietf-httpbis-client-hints": {
             "github-issue-label": null,
-            "revision": 12,
+            "revision": 14,
             "title": "HTTP Client Hints"
           },
           "draft-ietf-httpbis-digest-headers": {
