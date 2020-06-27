@@ -2,11 +2,23 @@
   "Link Relations Registry": {
     "name": "Link Relations Registry",
     "repos": {
-      "link-relations/registry": {
+      "protocol-registries/link-relations": {
         "group": "Link Relations Registry",
         "issue_summary_to": [
           "mnot@mnot.net",
           "julian.reschke@greenbytes.de"
+        ],
+        "repo_type": "registry"
+      }
+    }
+  },
+  "Well-Known URIs Registry": {
+    "name": "Well-Known URIs Registry",
+    "repos": {
+      "protocol-registries/well-known-uris": {
+        "group": "Well-Known URIs Registry",
+        "issue_summary_to": [
+          "mnot@mnot.net"
         ],
         "repo_type": "registry"
       }
