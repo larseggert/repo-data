@@ -99,6 +99,10 @@
             "revision": 6,
             "title": "Secondary Certificate Authentication in HTTP/2"
           },
+          "draft-ietf-httpbis-message-signatures": {
+            "github-issue-label": null,
+            "title": "Signing HTTP Messages"
+          },
           "draft-ietf-httpbis-priority": {
             "github-issue-label": null,
             "revision": 0,
