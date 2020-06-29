@@ -47,7 +47,9 @@ def get(url):
     return res
 
 
-def collapse_list(url, output=[]):
+def collapse_list(url, output=None):
+    if output is None:
+        output = []
     try:
         res = get(url)
     except IOError:
