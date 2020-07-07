@@ -1,4 +1,16 @@
 {
+  "HTTP Preferences Registry": {
+    "name": "HTTP Preferences Registry",
+    "repos": {
+      "protocol-registries/http-preferences": {
+        "group": "HTTP Preferences Registry",
+        "issue_summary_to": [
+          ""
+        ],
+        "repo_type": "registry"
+      }
+    }
+  },
   "Link Relations Registry": {
     "name": "Link Relations Registry",
     "repos": {
