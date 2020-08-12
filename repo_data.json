@@ -83,7 +83,7 @@
           },
           "draft-ietf-httpbis-cache-header": {
             "github-issue-label": null,
-            "revision": 4,
+            "revision": 5,
             "title": "The Cache-Status HTTP Response Header Field"
           },
           "draft-ietf-httpbis-client-hints": {
@@ -122,7 +122,7 @@
           },
           "draft-ietf-httpbis-proxy-status": {
             "github-issue-label": "proxy-status",
-            "revision": 1,
+            "revision": 2,
             "title": "The Proxy-Status HTTP Response Header Field"
           },
           "draft-ietf-httpbis-rfc6265bis": {
