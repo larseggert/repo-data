@@ -106,11 +106,6 @@
             "revision": 19,
             "title": "Structured Field Values for HTTP"
           },
-          "draft-ietf-httpbis-http2-secondary-certs": {
-            "github-issue-label": null,
-            "revision": 6,
-            "title": "Secondary Certificate Authentication in HTTP/2"
-          },
           "draft-ietf-httpbis-message-signatures": {
             "github-issue-label": null,
             "title": "Signing HTTP Messages"
