@@ -112,7 +112,7 @@
           },
           "draft-ietf-httpbis-priority": {
             "github-issue-label": null,
-            "revision": 1,
+            "revision": 2,
             "title": "Extensible Prioritization Scheme for HTTP"
           },
           "draft-ietf-httpbis-proxy-status": {
