@@ -93,7 +93,7 @@
           },
           "draft-ietf-httpbis-digest-headers": {
             "github-issue-label": null,
-            "revision": 3,
+            "revision": 4,
             "title": "Digest Headers"
           },
           "draft-ietf-httpbis-expect-ct": {
