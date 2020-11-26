@@ -60,7 +60,7 @@
           },
           "draft-ietf-httpbis-messaging-latest": {
             "github-issue-label": null,
-            "title": "HTTP/1.1 Messaging"
+            "title": "HTTP/1.1"
           },
           "draft-ietf-httpbis-semantics-latest": {
             "github-issue-label": null,
