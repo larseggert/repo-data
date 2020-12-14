@@ -158,7 +158,7 @@
           },
           "draft-ietf-quic-invariants": {
             "github-issue-label": null,
-            "revision": 11,
+            "revision": 12,
             "title": "Version-Independent Properties of QUIC"
           },
           "draft-ietf-quic-qpack": {
@@ -168,17 +168,17 @@
           },
           "draft-ietf-quic-recovery": {
             "github-issue-label": null,
-            "revision": 32,
+            "revision": 33,
             "title": "QUIC Loss Detection and Congestion Control"
           },
           "draft-ietf-quic-tls": {
             "github-issue-label": null,
-            "revision": 32,
+            "revision": 33,
             "title": "Using TLS to Secure QUIC"
           },
           "draft-ietf-quic-transport": {
             "github-issue-label": null,
-            "revision": 32,
+            "revision": 33,
             "title": "QUIC: A UDP-Based Multiplexed and Secure Transport"
           }
         }
