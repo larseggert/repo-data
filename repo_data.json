@@ -86,11 +86,6 @@
             "revision": 7,
             "title": "The Cache-Status HTTP Response Header Field"
           },
-          "draft-ietf-httpbis-client-hints": {
-            "github-issue-label": null,
-            "revision": 14,
-            "title": "HTTP Client Hints"
-          },
           "draft-ietf-httpbis-digest-headers": {
             "github-issue-label": null,
             "revision": 4,
@@ -100,11 +95,6 @@
             "github-issue-label": null,
             "revision": 8,
             "title": "Expect-CT Extension for HTTP"
-          },
-          "draft-ietf-httpbis-header-structure": {
-            "github-issue-label": null,
-            "revision": 19,
-            "title": "Structured Field Values for HTTP"
           },
           "draft-ietf-httpbis-message-signatures": {
             "github-issue-label": null,
