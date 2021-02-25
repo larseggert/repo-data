@@ -78,7 +78,7 @@
         "specs": {
           "draft-ietf-httpbis-bcp56bis": {
             "github-issue-label": null,
-            "revision": 9,
+            "revision": 10,
             "title": "Building Protocols with HTTP"
           },
           "draft-ietf-httpbis-cache-header": {
