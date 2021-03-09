@@ -116,6 +116,10 @@
             "revision": 7,
             "title": "Cookies: HTTP State Management Mechanism"
           },
+          "draft-ietf-httpbis-safe-method-w-body": {
+            "github-issue-label": null,
+            "title": "\n      HTTP SEARCH Method\n    "
+          },
           "draft-ietf-httpbis-variants": {
             "github-issue-label": null,
             "revision": 6,
