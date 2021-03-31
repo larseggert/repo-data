@@ -118,6 +118,7 @@
           },
           "draft-ietf-httpbis-safe-method-w-body": {
             "github-issue-label": null,
+            "revision": 0,
             "title": "\n      HTTP SEARCH Method\n    "
           },
           "draft-ietf-httpbis-variants": {
