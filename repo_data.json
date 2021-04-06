@@ -98,7 +98,7 @@
           },
           "draft-ietf-httpbis-message-signatures": {
             "github-issue-label": null,
-            "revision": 2,
+            "revision": 3,
             "title": "Signing HTTP Messages"
           },
           "draft-ietf-httpbis-priority": {
