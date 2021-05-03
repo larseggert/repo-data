@@ -151,30 +151,10 @@
             "revision": 34,
             "title": "Hypertext Transfer Protocol Version 3 (HTTP/3)"
           },
-          "draft-ietf-quic-invariants": {
-            "github-issue-label": null,
-            "revision": 13,
-            "title": "Version-Independent Properties of QUIC"
-          },
           "draft-ietf-quic-qpack": {
             "github-issue-label": null,
             "revision": 21,
             "title": "QPACK: Header Compression for HTTP/3"
-          },
-          "draft-ietf-quic-recovery": {
-            "github-issue-label": null,
-            "revision": 34,
-            "title": "QUIC Loss Detection and Congestion Control"
-          },
-          "draft-ietf-quic-tls": {
-            "github-issue-label": null,
-            "revision": 34,
-            "title": "Using TLS to Secure QUIC"
-          },
-          "draft-ietf-quic-transport": {
-            "github-issue-label": null,
-            "revision": 34,
-            "title": "QUIC: A UDP-Based Multiplexed and Secure Transport"
           }
         }
       }
