@@ -86,6 +86,10 @@
             "revision": 8,
             "title": "The Cache-Status HTTP Response Header Field"
           },
+          "draft-ietf-httpbis-client-cert-field": {
+            "github-issue-label": null,
+            "title": "Client-Cert HTTP Header Field: Conveying Client Certificate Information from TLS Terminating Reverse Proxies to Origin Server Applications"
+          },
           "draft-ietf-httpbis-digest-headers": {
             "github-issue-label": null,
             "revision": 5,
