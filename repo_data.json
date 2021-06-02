@@ -117,7 +117,7 @@
           },
           "draft-ietf-httpbis-rfc6265bis": {
             "github-issue-label": null,
-            "revision": 7,
+            "revision": 8,
             "title": "Cookies: HTTP State Management Mechanism"
           },
           "draft-ietf-httpbis-safe-method-w-body": {
