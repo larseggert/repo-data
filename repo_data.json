@@ -102,7 +102,7 @@
           },
           "draft-ietf-httpbis-message-signatures": {
             "github-issue-label": null,
-            "revision": 4,
+            "revision": 5,
             "title": "Signing HTTP Messages"
           },
           "draft-ietf-httpbis-priority": {
@@ -122,7 +122,7 @@
           },
           "draft-ietf-httpbis-safe-method-w-body": {
             "github-issue-label": null,
-            "revision": 0,
+            "revision": 1,
             "title": "\n      HTTP SEARCH Method\n    "
           },
           "draft-ietf-httpbis-variants": {
