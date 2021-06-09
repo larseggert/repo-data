@@ -77,22 +77,22 @@
         "revisions_tagged": true,
         "specs": {
           "draft-ietf-httpbis-bcp56bis": {
-            "github-issue-label": null,
+            "github-issue-label": "bcp56bis",
             "revision": 12,
             "title": "Building Protocols with HTTP"
           },
           "draft-ietf-httpbis-cache-header": {
-            "github-issue-label": null,
+            "github-issue-label": "cache-header",
             "revision": 8,
             "title": "The Cache-Status HTTP Response Header Field"
           },
           "draft-ietf-httpbis-client-cert-field": {
-            "github-issue-label": null,
+            "github-issue-label": "client-cert-header",
             "revision": 0,
             "title": "Client-Cert HTTP Header Field: Conveying Client Certificate Information from TLS Terminating Reverse Proxies to Origin Server Applications"
           },
           "draft-ietf-httpbis-digest-headers": {
-            "github-issue-label": null,
+            "github-issue-label": "digest-headers",
             "revision": 5,
             "title": "Digest Headers"
           },
@@ -102,12 +102,12 @@
             "title": "Expect-CT Extension for HTTP"
           },
           "draft-ietf-httpbis-message-signatures": {
-            "github-issue-label": null,
+            "github-issue-label": "signatures",
             "revision": 5,
             "title": "Signing HTTP Messages"
           },
           "draft-ietf-httpbis-priority": {
-            "github-issue-label": null,
+            "github-issue-label": "priorities",
             "revision": 3,
             "title": "Extensible Prioritization Scheme for HTTP"
           },
@@ -117,7 +117,7 @@
             "title": "The Proxy-Status HTTP Response Header Field"
           },
           "draft-ietf-httpbis-rfc6265bis": {
-            "github-issue-label": null,
+            "github-issue-label": "6265bis",
             "revision": 8,
             "title": "Cookies: HTTP State Management Mechanism"
           },
