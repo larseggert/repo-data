@@ -88,6 +88,7 @@
           },
           "draft-ietf-httpbis-client-cert-field": {
             "github-issue-label": null,
+            "revision": 0,
             "title": "Client-Cert HTTP Header Field: Conveying Client Certificate Information from TLS Terminating Reverse Proxies to Origin Server Applications"
           },
           "draft-ietf-httpbis-digest-headers": {
