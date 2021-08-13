@@ -103,8 +103,8 @@
           },
           "draft-ietf-httpbis-message-signatures": {
             "github-issue-label": "signatures",
-            "revision": 5,
-            "title": "Signing HTTP Messages"
+            "revision": 6,
+            "title": "HTTP Message Signatures"
           },
           "draft-ietf-httpbis-priority": {
             "github-issue-label": "priorities",
