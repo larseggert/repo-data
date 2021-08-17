@@ -127,7 +127,7 @@
             "title": "\n      HTTP SEARCH Method\n    "
           },
           "draft-ietf-httpbis-targeted-cache-control": {
-            "github-issue-label": null,
+            "github-issue-label": "targeted-cc",
             "revision": 0,
             "title": "Targeted HTTP Cache Control"
           },
