@@ -113,7 +113,7 @@
           },
           "draft-ietf-httpbis-proxy-status": {
             "github-issue-label": "proxy-status",
-            "revision": 5,
+            "revision": 6,
             "title": "The Proxy-Status HTTP Response Header Field"
           },
           "draft-ietf-httpbis-rfc6265bis": {
