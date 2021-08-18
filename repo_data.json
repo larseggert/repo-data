@@ -78,12 +78,12 @@
         "specs": {
           "draft-ietf-httpbis-bcp56bis": {
             "github-issue-label": "bcp56bis",
-            "revision": 13,
+            "revision": 14,
             "title": "Building Protocols with HTTP"
           },
           "draft-ietf-httpbis-cache-header": {
             "github-issue-label": "cache-header",
-            "revision": 9,
+            "revision": 10,
             "title": "The Cache-Status HTTP Response Header Field"
           },
           "draft-ietf-httpbis-client-cert-field": {
