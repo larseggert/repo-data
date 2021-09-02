@@ -137,7 +137,7 @@
             "title": "Targeted HTTP Cache Control"
           },
           "draft-ietf-httpbis-variants": {
-            "github-issue-label": null,
+            "github-issue-label": "variants",
             "revision": 6,
             "title": "HTTP Representation Variants"
           }
