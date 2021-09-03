@@ -127,7 +127,7 @@
             "title": "HTTP Alternative Services"
           },
           "draft-ietf-httpbis-safe-method-w-body": {
-            "github-issue-label": null,
+            "github-issue-label": "safe-method-w-body",
             "revision": 1,
             "title": "\n      HTTP SEARCH Method\n    "
           },
