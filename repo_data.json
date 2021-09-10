@@ -101,6 +101,11 @@
             "revision": 8,
             "title": "Expect-CT Extension for HTTP"
           },
+          "draft-ietf-httpbis-h3-websockets": {
+            "github-issue-label": "h3-websockets",
+            "revision": 0,
+            "title": "Bootstrapping WebSockets with HTTP/3"
+          },
           "draft-ietf-httpbis-message-signatures": {
             "github-issue-label": "signatures",
             "revision": 6,
