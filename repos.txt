@@ -4,3 +4,5 @@ httpwg/http-core
 protocol-registries/link-relations
 protocol-registries/well-known-uris
 protocol-registries/http-preferences
+ietf/tao
+ietf/id-guidelines
